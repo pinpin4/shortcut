@@ -16,8 +16,8 @@ apt-get update
 echo y | apt-get install docker-ce docker-ce-cli containerd.io
 docker run hello-world
 echo 'Docker 安装完成，请检查是否出现 Hello from Docker!'
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
-sudo chmod +x /usr/local/bin/docker-compose \
-docker-compose --version 
- ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+echo sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+echo sudo chmod +x /usr/local/bin/docker-compose \
+echo docker-compose --version 
+echo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
